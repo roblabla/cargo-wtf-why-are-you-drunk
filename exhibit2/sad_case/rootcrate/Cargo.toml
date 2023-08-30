@@ -1,0 +1,9 @@
+[package]
+name = "rootcrate"
+
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+subcrate.workspace = true

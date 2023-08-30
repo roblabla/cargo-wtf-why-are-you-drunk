@@ -1,0 +1,8 @@
+[toolchain]
+# Note: When upgrading this version, make sure to bump the .gitlab-ci.yml to use
+# that newer version of the docker image.
+#
+# Command to use to update the flake:
+#   nix flake lock --update-input rust-overlay
+channel = "1.71.0"
+profile = "minimal"

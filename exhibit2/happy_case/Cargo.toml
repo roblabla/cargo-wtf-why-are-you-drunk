@@ -1,0 +1,18 @@
+[workspace.package]
+version = "2.29.9"
+edition = "2021"
+publish = false
+
+[workspace]
+members = [
+    "crate2",
+    "crate1",
+]
+resolver = "2"
+
+[workspace.dependencies]
+# Internal crates
+crate1 = { version = "*", path = "./crate1" }
+
+# External dependencies
+rustdns = { version = "0.4.0", default-features = false, git = "https://github.com/JustRustThings/rustdns", branch = "stuff-0.4.0" }

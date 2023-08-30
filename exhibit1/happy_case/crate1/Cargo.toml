@@ -1,0 +1,9 @@
+[package]
+name = "crate1"
+
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+rustdns.workspace = true
